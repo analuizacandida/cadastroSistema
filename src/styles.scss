@@ -1,1 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+.mt-60 {
+    margin-top: 60px;
+} 
+
+.full-width {
+    width: 100%;
+} 
+.ml-5 {
+    margin-left: 5px;
+}
+
+.form-container {
+    margin-top: 40px;
+  }
+
+  .dados-pessoais-titulo {
+    margin-bottom: 30px; 
+  }
+  
+  
+  mat-card {
+    padding: 20px;
+    border-radius: 12px;
+  }
+  
+  mat-form-field {
+    flex: 1;
+  }
+  
+  mat-card-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+  
+  mat-card-actions {
+    margin-top: 16px;
+  }
+
+  mat-card-header {
+    margin-bottom: 16px;
+  }
+  
