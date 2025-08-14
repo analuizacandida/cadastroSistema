@@ -9,6 +9,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { Cliente } from './cliente';
+import { ClienteService } from './cliente.service';
 
 @Component({
   selector: 'app-cadastro',
@@ -31,9 +32,13 @@ export class CadastroComponent {
 
   cliente: Cliente = Cliente.newCliente();
 
+  constructor(private clienteService: ClienteService) {
+    
+  }
+
+
   salvar() {
-    console.log('Cliente salvo:', this.cliente);
-   
+   this.clienteService.salvar(this.cliente);
   }
 
 }
